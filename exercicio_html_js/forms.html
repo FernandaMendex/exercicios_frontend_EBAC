@@ -8,18 +8,20 @@
 <body>
     <h1>Formulário</h1>
     <p>Vamos verificar se um número é maior que o outro?</p>
-    <form>
+    <form id="form">
         <label for="primeiroNum">Escolha ou digite o primeiro número:</label>
-        <input id="primeiroNum" type="number" min="0" max="100" />
+        <input type="number" min="0" max="100" id="primeiroNum" />
 
         <br>
 
         <label for="segundoNum">Escolha ou digite o segundo número:</label>
-        <input id="segundoNum" type="number" min="0" max="100" />
+        <input type="number" min="0" max="100" id="segundoNum" />
 
         <br>
 
-        <button>Verificar</button>
+        <button type="submit">Verificar</button>
+
+        <script src="script.js"></script>
     </form>
     
 </body>
