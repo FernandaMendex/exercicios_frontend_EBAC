@@ -3,26 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
     <title>Formulário</title>
 </head>
 <body>
-    <h1>Formulário</h1>
-    <p>Vamos verificar se um número é maior que o outro?</p>
-    <form id="form">
-        <label for="primeiroNum">Escolha ou digite o primeiro número:</label>
-        <input type="number" min="0" max="100" id="primeiroNum" />
-
-        <br>
-
-        <label for="segundoNum">Escolha ou digite o segundo número:</label>
-        <input type="number" min="0" max="100" id="segundoNum" />
-
-        <br>
-
-        <button type="submit">Verificar</button>
-
-        <script src="script.js"></script>
-    </form>
+    <div class="container" id="formulario">
+        <h2>Qual número é maior?</h2>
+        <form id="form">
+            <label class="form-label" for="primeiroNum">Escolha ou digite o primeiro número:</label>
+            <input class="form-control form-control-sm" type="number" min="0" id="primeiroNum" />
+            <br>
+            <label class="form-label" for="segundoNum">Escolha ou digite o segundo número:</label>
+            <input class="form-control form-control-sm" type="number" min="0" id="segundoNum" />
+            <br>
+            <button class="btn btn-success" type="submit">Verificar</button>
+            <script src="script.js"></script>
+        </form>
+    </div>
     
 </body>
 </html>
